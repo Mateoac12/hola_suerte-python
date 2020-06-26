@@ -66,7 +66,7 @@ def JugadoresElegidos(numJugadores):
 
 
 root.title("Hola Suerte!")
-root.iconbitmap("C:/Users/Usuario/Desktop/HolaSuerte/icono.ico")
+root.iconbitmap("../hola_suerte/HolaSuerte/icono.ico")
 
 barra_menu = tk.Menu(root)
 root.config(menu = barra_menu, bg = 'white')
@@ -122,9 +122,9 @@ MostrarGanador.config(bg = 'white')
 
 #  ------------------------------  CONSTRUCCION DE LOS WIDGETS  ------------------------------  #
 
-logotipo = tk.PhotoImage(file = 'C:/Users/Usuario/Desktop/HolaSuerte/HolaSuerteLogo.png')
+logotipo = tk.PhotoImage(file = "../hola_suerte/HolaSuerte/HolaSuerteLogo.png")
 
-miLogo = tk.Label(Inicio, image = logotipo, bg = 'white')
+miLogo = tk.Label(Inicio, image=logotipo, bg = 'white')
 miLogo.grid(row = 0, column = 0, padx = 20, pady = 20)
 
 info = '¡Haz Click en el número de participantes y que comiencen los nervios!'
